@@ -1,0 +1,7 @@
+
+Java 8 introduced because of 3 reasons only
+
+1. write Minimum and concise code
+2. To use the functional programming benefits in JAVA, java 8 introduced, but still java is a Object
+    oriented programming language.
+3. To enable parallel programming. (i.e. More compatible codes for multi core processors)
