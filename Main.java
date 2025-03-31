@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.Collections;
 
@@ -62,6 +63,33 @@ public class Main{
         // That means both the condition must satisfy this condtion 
         // Other Predicates also there (i.e. or and negate)
         System.out.println(andOperation.test("Vishal")); 
+
+
+
+
+        // Function Interface in Java
+        // Basically here we provide datatype for both Input and Output (i.e. Function<Input_Datatype, Output_Datatype> ) 
+
+        Function<String, Integer> getLen = (String str) ->{
+            return str.length();
+        };
+
+        Function<String, String> substring = (String str) -> {
+            return str.substring(0,4);
+        };
+
+        System.out.println(getLen.apply("Hello"));
+        System.out.println(substring.apply("Vivek"));
+
+
+        // Combine 2 Function Interface methods
+
+        Function<String, String> lowerCase = (String str) ->{
+            return str.toLowerCase();
+        };
+
+        Function<String, String> getResult = lowerCase.andThen(substring); // Basically this Function getResult is the combination of lowerCase and substring Function Interface
+        System.out.println(getResult.apply("VIVEK"));
 
     }
 }
