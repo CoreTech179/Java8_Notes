@@ -1,0 +1,20 @@
+Basically lamda Expression is a anonymous function 
+That means, It doesn't have any return type, method name and also don't have a access modifier
+
+Steps to make any method a lamda expression are
+1. Remove access modifier
+2. Remove return type
+3. Remove method name
+4. place arrow
+
+i.e. Example
+
+public void sayHello(){
+    System.out.println("hello");
+}
+
+therefore, equivalent lamda expression is = 
+
+() -> {
+    System.out.println("Hello");
+}
