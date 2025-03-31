@@ -18,3 +18,99 @@ therefore, equivalent lamda expression is =
 () -> {
     System.out.println("Hello");
 }
+
+Example 2
+
+private void add(int a, int b){
+    System.out.println(a + b);
+}
+
+therefore equivalent lamda expression is = 
+
+(int a, int b) ->{
+    System.out.println(a + b);
+}
+
+
+Example 3
+
+private int getStringLen(String str){
+    return str.length();
+}
+
+therefore equivalent lamda expression is = 
+
+(String str) -> {
+    return str.length()
+}
+
+
+Characteristics of lamda Expression
+
+1. It says that, if there is only a single statement than we can remove curly brackets i.e."{}"
+2. Use type inference, the compiler will automatically gussess the situation
+
+Example of 1st Characteristic
+
+private int getStringLen(String str){
+    return str.length();
+}
+
+therefore equivalent lamda expression is = 
+
+(String str) -> {
+    return str.length()
+}
+
+more concise lamda expression will be 
+
+(String str) -> return str.length()
+
+
+
+Example of 2nd Characteristic
+
+private void add(int a, int b){
+    System.out.println(a + b);
+}
+
+therefore equivalent lamda expression is = 
+
+(int a, int b) ->{
+    System.out.println(a + b);
+}
+
+more concise lamda expression is = 
+
+therefore equivalent lamda expression is = 
+
+(a, b) -> System.out.println(a + b);
+
+
+It also says that if we are using a lamda expression then we can also remove the return statement
+
+Example 
+
+private int getStringLen(String str){
+    return str.length();
+}
+
+therefore equivalent lamda expression is = 
+
+(String str) -> {
+    return str.length()
+}
+
+more concise lamda expression
+(String str) -> return str.length()
+
+No return keyword is required
+
+(str) -> str.length();
+
+
+
+Benefits of lamda Expression are 
+
+1. It makes code more readable, concise and maintainable.
+2. JAR file size will get reduded.
