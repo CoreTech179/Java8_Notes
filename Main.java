@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Collections;
+
 public class Main{
     public static void main(String[] args) {
         
@@ -20,6 +24,26 @@ public class Main{
 
         Thread myThread = new Thread(runnable);
         myThread.run();
+
+
+        System.out.println();
+
+        // How to use Comparator using lamda expression 
+        
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(4);
+        list.add(3);
+        list.add(6);
+        list.add(8);
+
+       // Collections.sort(list); // Normal sorting order,
+        // But now if we want our custom sorting order than we can use Comparator class in java
+        // Where (a - b) = natural sorting order(i.e. Ascending order) & (b - a) = descending sorting order
+
+        Collections.sort(list, (a, b) -> b - a );
+
+        System.out.println(list);
 
     }
 }
