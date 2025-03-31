@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.Collections;
 
 public class Main{
@@ -44,6 +45,15 @@ public class Main{
         Collections.sort(list, (a, b) -> b - a );
 
         System.out.println(list);
+
+
+        // Predicate Interface in java 
+
+        // Basically Predicate is a Boolean valued function that returns true or false based on the condition given.
+        // Basically Predicate holds the condition only
+        
+        Predicate<Integer> isEven = (number) -> number % 2 == 0;
+        System.out.println(isEven.test(13));
 
     }
 }
