@@ -1,0 +1,17 @@
+The features of Java 8 are
+
+1. Lamda expression --> They are similar to methods but they do not need a name and they can be implemented
+    right in the body of a method.
+    ex. (x,y) -> x + y
+
+2. Stream API --> It is used for bulk data operations on the Collection frameworks
+
+3. Date and Time API
+
+4. Built-in Base64 Encoding and Decoding functions are introduced in Java.util.Base64
+
+5. :: Operator (i.e. Method reference and constructor reference)
+
+6. Default and Static methods introduced inside Interface
+
+7. Functional Interface --> A functional Interface is an Interface that has exactly one abstract method.
