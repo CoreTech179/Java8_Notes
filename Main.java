@@ -50,10 +50,18 @@ public class Main{
         // Predicate Interface in java 
 
         // Basically Predicate is a Boolean valued function that returns true or false based on the condition given.
-        // Basically Predicate holds the condition only
+        // Basically Predicate holds a condition only
         
         Predicate<Integer> isEven = (number) -> number % 2 == 0;
         System.out.println(isEven.test(13));
+
+        Predicate<String> startsWithLetterV = (str) -> str.toLowerCase().charAt(0) == 'v';
+        Predicate<String> endsWithLetterL = (str) -> str.toLowerCase().charAt(str.length() -1) == 'l';
+
+        Predicate<String> andOperation = startsWithLetterV.and(endsWithLetterL); // Basically this andOperation Predicate is the combination of startsWithLetterV and endsWithLetterL predicate.
+        // That means both the condition must satisfy this condtion 
+        // Other Predicates also there (i.e. or and negate)
+        System.out.println(andOperation.test("Vishal")); 
 
     }
 }
