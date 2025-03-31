@@ -1,0 +1,2 @@
+A Interface having only a single abstract method is known as functional Interface. But it can have any numbers of default and static methods.
+We can invoke lamda expression by using functional Interface
