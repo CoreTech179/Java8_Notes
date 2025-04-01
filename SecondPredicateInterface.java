@@ -10,5 +10,8 @@ public class SecondPredicateInterface {
         BiPredicate<Integer, Integer> isEven = (x, y) -> x % 2 == 0 && y % 2 == 0;
         System.out.println(isEven.test(2, 4));
 
+
+        // Same BiFunction and BiConsumer Interfaces are also available. And it takes 2 input values
+
     }
 }
