@@ -1,0 +1,8 @@
+1. Local Date = Represents a date without a timezone
+2. Local Time = Represents only time without a date or timezone
+3. Local Date Time = Represents date and time without a timezone
+4. Zoned Date Time = Represents date and time with a timezone
+5. Instant = Represents the date and time from 1 Jan 19970 till now how many nano seconds is there
+7. Duration = Represents a Duration of time in between 2 points in a time
+6. Period = Represents a peiod of time between 2 dates
+8. Date Time Formatter = Formats and parse date and times
