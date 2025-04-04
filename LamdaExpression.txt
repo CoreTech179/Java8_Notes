@@ -59,12 +59,12 @@ private int getStringLen(String str){
 therefore equivalent lamda expression is = 
 
 (String str) -> {
-    return str.length()
+    return str.length();
 }
 
 more concise lamda expression will be 
 
-(String str) -> return str.length()
+(String str) -> return str.length();
 
 
 
