@@ -1,0 +1,95 @@
+Q. What is collection ?
+--> Collection simply means group of elements. In our case there are Strings, numbers, etc.
+
+Q. What is collection Frameworks ?
+--> Basically it is a set of interfaces and classes in Java that helps us to manage all the collections.
+
+Note: The collection frameworks are primarily build around in a set of Interfaces.
+
+Important Interfaces are:
+
+1. Collection: It is the root interface for all the collections
+
+2. List: It is an ordered collection that can contain duplicate elements (i.e. ArrayList, LinkedList)
+
+3. Set: It is a collection that doesn't contain duplicate elements (i.e. Hashset, TreeSet)
+
+4. Queue: It is a collection which is designed for holding all the elements prior to processing (i.e. PriorityQueue)
+
+5. Deque: It is a double ended queue that allows insertion and deletion from both the ends (i.e. ArrayDeque)
+
+6. Map: It is an Interface that represents a collection of key-value pairs (i.e. HashMap, TreeMap)
+
+
+Overview of the above collections:
+
+1. List: The way you store the data inside the list, it will get stored in that order. It can contain duplicate elements.
+
+2. Set: The way you store the data inside the Set, it will not stored in that order, because it is unordered. It can't contains duplicates values.
+
+3. Queue: It just follows the FIFO (First In First Out) principle. (ex. we have buy a product at an offline store and we got to the billing section then whoever comes first in the line they got the priority)
+
+4. Map: It stores the data in key-value pairs (ex. studentName - rollNo)
+
+
+About Collection Interface:
+
+Collection Interface: The Collection Interface is the root interface of the Java Collection framework. 
+
+-->It is the most basic interface that defines a group of elements.
+
+--> It is the Parent interface which is extended by the other collection interfaces such as List, Set, etc.
+
+--> Since it is an interface therefore we cannot initiate it directly, but it provides a blueprint of common basic operations that are common in all the other collections.
+
+--> It already contains some core predefined methods that can be implemented by all the classes that implements the interface. This methods allows basic operations such as adding, removing and checking the existence of an element in a collection.
+
+
+
+
+
+About List Interface: The List interface is a part of java.util package and it is a interface that extends the Collection interface.
+
+--> It provides an way to store ordered collection of elements.
+
+--> It precisely controls where the elements are inserted and also it can contain duplicate elements
+
+--> The List interface is implemented by several classes in the java collection framework, such as ArrayList, LinkedList, Vector, Stack.
+
+
+Key Features are: 
+
+1. Order Preservation   
+
+2. Indexed-based Access   
+
+3. Allows Duplicate elements
+
+
+
+*** ARRAY_LIST *** 
+
+--> Basically arraylist is a resizeable array that is the implementation of the List Interface.
+
+--> Unlike Arrays in Java which is having a fixed size, but an ArrayList can change its size dynamically as the elements are added or removed.
+
+--> This flexibility makes it a popular choice when the number of elements is unknown in advance.
+
+
+Internal Working of ArrayList:
+
+--> Unlike a regular array, which is having a fixed size, an ArrayList can grow and shrink its size dynamically as elements are added or removed. It is acheived by creating an entire new array when the current array is full and it copys all the elements to its new array.
+
+--> When you create a ArrayList it is having a default capacity of 10. Capacity means the size of the internal array before resizing.
+
+
+
+*** Note ***
+
+--> When we add an element to an ArrayList, following steps happened
+
+(a) Check Capacity: Before adding the new element, the ArrayList checks if there is enough space inside the internal array or not. If the array is full it is needed to be resized.
+
+(b) Resizing (if neccessary): If the internal Array is full, the arrayList will create a entire new array with a larger capacity (usually 1.5 times of the current array) and then copy all the old elements into the new array.
+
+(c) Add the element: The new element is added to the internal array at the appropriate index number and size is incremented.
