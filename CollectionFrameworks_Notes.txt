@@ -6,7 +6,7 @@ Q. What is collection Frameworks ?
 
 Note: The collection frameworks are primarily build around in a set of Interfaces.
 
-Important Interfaces are:
+*** Important Interfaces are: ***
 
 1. Collection: It is the root interface for all the collections
 
@@ -21,7 +21,7 @@ Important Interfaces are:
 6. Map: It is an Interface that represents a collection of key-value pairs (i.e. HashMap, TreeMap)
 
 
-Overview of the above collections:
+*** Overview of the above collections: ***
 
 1. List: The way you store the data inside the list, it will get stored in that order. It can contain duplicate elements.
 
@@ -32,7 +32,7 @@ Overview of the above collections:
 4. Map: It stores the data in key-value pairs (ex. studentName - rollNo)
 
 
-About Collection Interface:
+*** About Collection Interface: ***
 
 Collection Interface: The Collection Interface is the root interface of the Java Collection framework. 
 
@@ -67,7 +67,7 @@ Key Features are:
 
 
 
-*** ARRAY_LIST *** 
+*** ARRAY_LIST In Java Collection Framework *** 
 
 --> Basically arraylist is a resizeable array that is the implementation of the List Interface.
 
@@ -93,3 +93,81 @@ Internal Working of ArrayList:
 (b) Resizing (if neccessary): If the internal Array is full, the arrayList will create a entire new array with a larger capacity (usually 1.5 times of the current array) and then copy all the old elements into the new array.
 
 (c) Add the element: The new element is added to the internal array at the appropriate index number and size is incremented.
+
+
+*** LinkedList In Collection Framework ****
+
+--> Basically it is a class in Java and it is a part of Java collection framework which implements the List interface.
+
+--> Unlike an arrayList which uses the dynamic array to store the elements, a LinkedList stores its elements as a node in a doubly Linked List format. 
+
+--> Basically a LinkedList is a linear Data structure where each element is a seperate object known as node. Each node contains 2 Parts
+
+(a) Data: The value stored inside the node.
+
+(b) Pointers: Since it is a doubly LinkedList therefore there are 2 pointers are there. One Pointing to the next node (i.e. next) & another pointing to the previous node (i.e. previous)
+
+
+** Performance of LinkedList Vs ArrayList ** 
+
+(i) Insertion & Deletion: LinkedList is better for continuous insertion and deletion in the middle of the list because it doesn't require shifting of elements as compared to ArrayList.
+
+(ii) Random Access: LinkedList is having a slower random access as compared to ArrayList because it has to traverse from the first node to the desired node.
+
+(iii) Memory Overhead: LinkedList requires more memory than ArrayList because every indivisual node in a LinkedList requires extra memory to store the references to the next and previous node.
+
+
+
+*** Vector In Java Collection Framework ***
+
+--> A Vecotr is a part of java.util package & it is one the legacy classes in Java that implements the List Interface.
+
+--> It was introduced in JDK 1.0 before Collection Framework and it is synchronized, making it thread safe.
+
+--> Now it is a part of Collection Framework.
+
+--> However due to synchronization overhead it is recommended to use other modern alternative methods such as ArrayList in a single threaded senarios. Despite all of this, Vector is still usefull in certain senarios, particularly in multi-threaded environments where thread safety is a concern.
+
+
+*** Features of Vector ***
+
+(a) Dynamic Array: Just Like ArrayList, Vector can grow its size dynamically when more elements are added than its current capacity.
+
+(b) Synchronized: All the methods in vector are synchronize, which makes it thread safe. This means multiple threads can work on a vector without the risk of corrupting the data. However, it can introduce performance overhead in a single threaded environments.
+
+(c) Resizing: When the current initial capacity of the vector is full it doubles its size by default. Or increases by a specific growth factor if provided externally.
+
+(d) Random Access: Just like ArrayList, Vector allows random access to the elements, making it efficient to access an element using the index number.
+
+
+
+*** STACK in Java Collection Framework ***
+
+--> Stack follows the LIFO order, that means the last element that is added is the 1st one to be removed.
+
+--> Since Stack extends Vector it is synchronized, making it thread safe.
+
+
+*** CopyOnWriteArrayList in Java Collection Framework ***
+
+--> Required Details is on the file CopyOnWriteArrayList_In_Collection_Framework.java 
+
+
+
+*** Map in Java Collection Framework ***
+
+--> Every entry in a Map contains of a Key & a Value 
+
+--> Keys must be unique. No 2 keys are same.
+
+--> Every Key maps to a single value.
+
+--> Some implementations maintain insertion order such as LinkedHashMap, natural order (TreeMap), & no order (HashMap).
+
+Q. When should we use Map ? 
+
+--> When we want to store data in a key-value Pair then we use Map.
+
+** Linked Hash Map In Java Collection Framework ** 
+
+--> The Major difference between HashMap & LinkedHashMap is that, Hashmap doesn't follow the order of storing the data whereas LinkedHashMap follows the order of storing the data.
