@@ -20,7 +20,20 @@ public class Reference1{
 
         students.forEach(Reference1::print); // Basically :: operator is known as method reference in java. By using this operator we can refer to any method without invoking it. Hence it makes our code look more cleaner and readable.
         // It can be used in the place of lamda expression
-        // (References::print) meaning of this is = go to the References class and refer to the print method 
+        // (References::print) meaning of this statement is = go to the References class and refer to the print method 
+
+        // Internally how method reference works
+
+        /*
+         * for(String x : students){
+         * 
+         *      Reference1.print(x);
+         * 
+         * }
+         * 
+         * --> For Each & every element of the Students List call the print method of the Reference1 class & print the names.
+         * 
+         */
 
     }
 }
