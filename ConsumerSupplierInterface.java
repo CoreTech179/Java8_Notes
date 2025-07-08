@@ -30,7 +30,7 @@ public class ConsumerSupplierInterface {
 
 
         // Supplier Interface in Java. 
-        // Basically it can return anything. Nothing rocket science.
+        // Basically it will supply any type of data by returning that type of data. Nothing rocket science.
         Supplier<String> supplier = () -> "returns anything!!";
         System.out.println(supplier.get());
 
