@@ -7,7 +7,7 @@ import java.util.function.Supplier;
 public class ConsumerSupplierInterface {
     public static void main(String[] args) {
         
-        // Basically Consumer is a functional Interface in java that only consumes any type of input and print result. Nothing rocket science.
+        // Basically Consumer is a functional Interface in java which is having an accept() method that doesn't return anything because the return type of the abstract method is void but it can take any data as a parameter . Nothing rocket science.
 
         Consumer<List<Integer>> listConsumer1 = (li) ->{
             for(Integer i : li){
