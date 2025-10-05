@@ -16,11 +16,13 @@ public class Reference1{
         students.forEach(x -> System.out.println(x)); // This lamda expression will just print the name of the students because forEach loop is taking only a method of Consumer Interface.
         // The Consumer Interface method only consumes element and prints it but it doesn't return anything.
 
+        // Basically for-Each loop picks each an every element 1 by 1 and then do the rest of the work i.e. defined under the Lamda expression. 
+
         System.out.println("By using Method reference");
 
         students.forEach(Reference1::print); // Basically :: operator is known as method reference in java. By using this operator we can refer to any method without invoking it. Hence it makes our code look more cleaner and readable.
         // It can be used in the place of lamda expression
-        // (References::print) meaning of this statement is = go to the References class and refer to the print method 
+        // (References::print) meaning of this statement is = go to the Reference1 class and refer to the print method 
 
         // Internally how method reference works
 
