@@ -84,7 +84,7 @@ public class ComparatorInArrayList {
 
         // How to remember ascending & descending
 
-        // Descending order means = decreasing order --> i.e. Big to small
+        // Descending order means = decreasing order ( 'D' for decreasing )--> i.e. Big to small
         // Ascending order means = increasing order --> i.e. small to Big
     }
 }
