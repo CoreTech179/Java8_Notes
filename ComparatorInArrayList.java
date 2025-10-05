@@ -81,5 +81,10 @@ public class ComparatorInArrayList {
         stringList.sort((a, b) -> b.length() - a.length());
 
         System.out.println(stringList);
+
+        // How to remember ascending & descending
+
+        // Descending order means = decreasing order --> i.e. Big to small
+        // Ascending order means = increasing order --> i.e. small to Big
     }
 }
